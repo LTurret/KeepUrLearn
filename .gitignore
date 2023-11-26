@@ -1,7 +1,6 @@
 # Custom
 .clang-format
 .vscode
-.secret.json
 build.sh
 *.html
 
