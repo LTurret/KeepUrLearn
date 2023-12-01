@@ -10,6 +10,7 @@ int main() {
     printf("\n");
     while (1) {
         update(cookie);
+        printf("下一次更新為30秒後\n");
         delay(30000);
     }
 }
