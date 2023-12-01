@@ -24,10 +24,12 @@ $ ./a.out
 
 更新完成！已保持的session cookie為：
 V2-1-9bd0c346-2b13-4fce-a7a2-9828d2c2e0ca.NTA4OTY.1701098676700.QBUNwSHVD3u5YhKwroS-VRTsCDE
+
+下一次更新為30秒後
 ```
 
 > [!NOTE]  
-> **不產生任何輸出，只持續與網站進行http連線**
+> **不產生任何輸出，只持續與網站進行http請求**
 
 ## 授權
 
