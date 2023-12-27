@@ -12,7 +12,7 @@ void update(char *suffix_cookie) {
         headers = curl_slist_append(
             headers, "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36");
 
-        char *url = "https://ulearn.nfu.edu.tw/course/18043/content#/";
+        char *url = "https://ulearn.nfu.edu.tw/user/settings#/";
         char prefix_cookie[200] = "session=";
 
         curl_easy_setopt(curl, CURLOPT_URL, url);
@@ -25,9 +25,9 @@ void update(char *suffix_cookie) {
             long response_code;
             curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &response_code);
             if (response_code == 200) {
+                printf("更新完成！已保持的session cookie為：\n%s\n\n", suffix_cookie);
             }
         }
-        printf("更新完成！已保持的session cookie為：\n%s\n\n", suffix_cookie);
         curl_easy_cleanup(curl);
     }
     curl_global_cleanup();
